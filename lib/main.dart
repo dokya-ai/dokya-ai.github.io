@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'dart:html' as html; // Para abrir enlaces web
-// IMPORTANTE: Asegúrate de que las rutas de importación coincidan con tus archivos
+import 'dart:html' as html;
+// Importamos las páginas de ShadowGPT
 import 'apps/shadow_gpt/privacy_policy.dart';
 import 'apps/shadow_gpt/shadow_gpt_page.dart';
 
@@ -19,12 +19,18 @@ class MyPortfolio extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFF0F0F0F),
         fontFamily: 'Roboto',
       ),
-      // Definimos las rutas aquí
       initialRoute: '/',
+      // ORGANIZACIÓN DE RUTAS POR APP
       routes: {
         '/': (context) => const HomePage(),
+
+        // --- RUTAS DE SHADOW GPT ---
         '/shadow-gpt': (context) => const ShadowGPTPage(),
-        '/privacy': (context) => const PrivacyPolicyPage(),
+        '/shadow-gpt/privacy': (context) => const PrivacyPolicyPage(),
+
+        // --- RUTAS DE FUTURAS APPS (Ejemplo) ---
+        // '/rstudio-connector': (context) => const RStudioPage(),
+        // '/rstudio-connector/privacy': (context) => const RStudioPrivacyPage(),
       },
     );
   }
@@ -42,7 +48,6 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             _buildHero(),
-
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 20),
               child: Column(
@@ -54,18 +59,14 @@ class HomePage extends StatelessWidget {
                     spacing: 20,
                     runSpacing: 20,
                     children: [
-                      // TARJETA SHADOW GPT
                       _buildProjectCard(
                         context,
                         title: "ShadowGPT",
                         description: "IA conversacional con interfaz ultra-minimalista optimizada para entornos oscuros.",
                         icon: Icons.nights_stay,
                         color: Colors.deepPurpleAccent,
-                        onTap: () {
-                          Navigator.pushNamed(context, '/shadow-gpt');
-                        },
+                        onTap: () => Navigator.pushNamed(context, '/shadow-gpt'),
                       ),
-                      // TARJETA RSTUDIO (Otras apps seguirán este patrón)
                       _buildProjectCard(
                         context,
                         title: "RStudio AI Connector",
@@ -73,8 +74,7 @@ class HomePage extends StatelessWidget {
                         icon: Icons.code,
                         color: Colors.blueAccent,
                         onTap: () {
-                          // Aquí iría la navegación a su respectiva página cuando la crees
-                          print("Navegando a RStudio Connector...");
+                          // Navigator.pushNamed(context, '/rstudio-connector');
                         },
                       ),
                     ],
@@ -82,13 +82,14 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-
             _buildFooter(),
           ],
         ),
       ),
     );
   }
+
+  // ... (Tus widgets _buildHero, _buildProjectCard y _buildFooter se mantienen igual)
 
   Widget _buildHero() {
     return Container(
@@ -129,7 +130,6 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  // HEMOS AÑADIDO 'onTap' PARA LA NAVEGACIÓN
   Widget _buildProjectCard(BuildContext context, {
     required String title,
     required String description,
