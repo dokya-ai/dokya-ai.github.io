@@ -37091,7 +37091,7 @@ if(r.$2(a,j)>0){s[b]=j
 b=o}}s[b]=a}}
 A.p8.prototype={
 O(a){var s=this
-return A.aex(A.agI(B.G,0,B.kE,B.MX),B.jR,A.aeD(A.rJ(new A.fT(B.wJ,A.lG(A.d([B.N1,B.vr,B.MV,B.zr,s.kc("1. Introduction","Welcome to ShadowGPT. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, and disclose information when you use our mobile application, which provides AI-assisted messaging and private communication services."),s.kc("2. Information We Collect","\u2022 Personal Data: We do not collect personal identity information (such as your name or address) unless you explicitly provide it. If you use our 'Pro' features, transaction data is handled securely by Google Play Billing.\n\n\u2022 Chat Data: Your private chats are stored locally on your device or encrypted. We do not have access to your private conversations.\n\n\u2022 Usage Data: We may collect anonymous technical data (device model, OS version) to improve the app's performance on platforms like Windows 11 and Android."),s.kc("3. Permissions","To provide our core features, the app may request:\n\u2022 Storage Access: To save and encrypt your chat history locally.\n\u2022 Internet Access: To communicate with AI models and process subscriptions."),s.kc("4. Third-Party Services","We use the following third-party services that may collect data:\n\u2022 Google Play Services: For app functionality and updates.\n\u2022 AdMob: To display advertisements (for non-Pro users).\n\u2022 RevenueCat / Google Play Billing: To manage secure in-app purchases and subscriptions."),s.kc("5. Data Security","ShadowGPT implements industry-standard encryption to ensure that your 'hidden' chats remain private. Since data is primarily stored on-device, the security of your chats also depends on your device's security settings."),s.kc("6. Children's Privacy","Our services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children."),s.kc("7. Contact Us","If you have any questions about this Privacy Policy, please contact us at: dokysgame@gmail.com"),B.IB],t.E),B.aC,B.ax),null),null,null),B.zS))},
+return A.aex(A.agI(B.G,0,B.kE,B.MW),B.jR,A.aeD(A.rJ(new A.fT(B.wJ,A.lG(A.d([B.N1,B.vr,B.N0,B.zr,s.kc("1. Introduction","Welcome to ShadowGPT. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, and handle information when you use our mobile application, which provides camouflaged messaging interfaces and private communication features."),s.kc("2. Core Functionality & Local Processing (Crucial Disclaimer)","ShadowGPT operates under a strict privacy-first model:\n\n\u2022 100% Local Processing: All automated responses, scripts, and camouflage features are generated locally on your device. We do not use cloud AI servers, and we do not transmit your messages over the internet to generate responses.\n\n\u2022 No Cloud Storage: Your private chats and intercepted notifications are stored exclusively in a secure, local database on your device. We do not have access to your private conversations, and they never leave your phone."),s.kc("3. Permissions We Request","To provide our core features, the app requires specific permissions:\n\n\u2022 Notification Access (NotificationListenerService): This is the core permission required for the app to function. We use this permission strictly to intercept incoming messages (from apps like WhatsApp) so they can be camouflaged and displayed within ShadowGPT. The data read from these notifications is processed and stored entirely offline on your device. We do not collect, share, or transmit this data to any external servers.\n\n\u2022 Advertising ID Permission: Required for Android 13+ devices to serve personalized or non-personalized ads (for non-Pro users)."),s.kc("4. Information Handled by Third-Party Services","While your chats remain completely offline, the app requires an internet connection solely to operate the following approved third-party services:\n\n\u2022 Google AdMob: To display advertisements. AdMob may collect your device's Advertising ID and anonymous usage data.\n\n\u2022 RevenueCat & Google Play Billing: To securely manage in-app purchases and 'Pro' subscriptions. We do not collect or store your credit card information."),s.kc("5. Data Security & Retention","Because your chat data is stored locally via SQLite database on your device, the security of your chats depends directly on your device's security settings (such as screen locks or biometrics). You can delete your chat history at any time from within the app, which permanently erases the data from your device's local storage."),s.kc("6. Children's Privacy","Our services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children."),s.kc("7. Contact Us","If you have any questions about this Privacy Policy or how your data is handled locally, please contact us at: dokysgame@gmail.com"),B.IB],t.E),B.aC,B.ax),null),null,null),B.zS))},
 kc(a,b){return new A.fA(B.zJ,A.lG(A.d([A.wJ(a,B.Ln,null),B.Iz,A.wJ(b,B.JG,null)],t.E),B.aC,B.ax),null)}}
 A.ps.prototype={
 O(a){return new A.B9("ShadowGPT","AI-assisted messaging with top-tier encryption and a minimalist dark interface.","assets/apps/shadow_gpt/icon.png",B.BQ,B.pY,"https://play.google.com/store/apps/details?id=com.dokya.shadowgpt",new A.a3h(a),null)}}
@@ -37104,8 +37104,8 @@ $.aS()
 s=A.agI(B.G,0,p,p)
 r=this.TG()
 q=A.kA(a).Kt(A.bQ([B.bQ,B.bR],t.F))
-r=A.d([r,B.IC,B.MW,B.dC,A.ajt(q,A.aeG(new A.E8(new A.a3y(new A.QQ(this),2,!0,!0,!0,p),B.zR,B.aA,!1,p,p,B.wH,!1,p,2,B.bl,p,p,B.am,B.an,p),500,p))],t.E)
-r.push(new A.fA(B.zL,new A.Hp(this.z,p,p,p,p,p,p,!1,p,!0,p,B.MZ,p),p))
+r=A.d([r,B.IC,B.MV,B.dC,A.ajt(q,A.aeG(new A.E8(new A.a3y(new A.QQ(this),2,!0,!0,!0,p),B.zR,B.aA,!1,p,p,B.wH,!1,p,2,B.bl,p,p,B.am,B.an,p),500,p))],t.E)
+r.push(new A.fA(B.zL,new A.Hp(this.z,p,p,p,p,p,p,!1,p,!0,p,B.MY,p),p))
 r.push(B.dC)
 return A.aex(s,B.jR,A.aeD(A.lG(r,B.aD,B.ax),p))},
 TG(){var s=this,r=null,q=A.d([A.adu(A.o1(24),A.ahX(s.e,new A.QN(),r,100,100)),B.dC,A.wJ(s.c,B.KQ,r),B.vs,new A.fA(B.zT,A.wJ(s.d,B.Mq,B.dD),r),B.vt],t.E),p=A.ahA(r,r,B.i,r,r,r,r,r,r,B.l,r,r,r,r,r,r,r,r,r,r)
@@ -37142,11 +37142,11 @@ $1(a){return B.GA},
 $S:267}
 A.oz.prototype={
 O(a){var s=null,r=t.E
-return A.aex(s,s,A.aeD(A.lG(A.d([this.TH(),new A.fA(B.zP,A.lG(A.d([B.N3,B.IA,new A.I6(20,20,A.d([this.Ei(a,B.pY,"IA conversacional con interfaz ultra-minimalista optimizada para entornos oscuros.",B.As,new A.Vr(a),"ShadowGPT"),this.Ei(a,B.eB,"Integraci\xf3n de LLMs en RStudio para automatizaci\xf3n de scripts en R y Stata.",B.Ap,new A.Vs(),"RStudio AI Connector")],r),s)],r),B.aD,B.ax),s),A.lI(s,B.N0,B.y,s,s,s,s,s,s,B.zU,s,s,s)],r),B.aD,B.ax),s))},
+return A.aex(s,s,A.aeD(A.lG(A.d([this.TH(),new A.fA(B.zP,A.lG(A.d([B.N3,B.IA,new A.I6(20,20,A.d([this.Ei(a,B.pY,"IA conversacional con interfaz ultra-minimalista optimizada para entornos oscuros.",B.As,new A.Vr(a),"ShadowGPT"),this.Ei(a,B.eB,"Integraci\xf3n de LLMs en RStudio para automatizaci\xf3n de scripts en R y Stata.",B.Ap,new A.Vs(),"RStudio AI Connector")],r),s)],r),B.aD,B.ax),s),A.lI(s,B.N_,B.y,s,s,s,s,s,s,B.zU,s,s,s)],r),B.aD,B.ax),s))},
 TH(){var s=null,r=A.d([A.aG(13,B.bN.B()>>>16&255,B.bN.B()>>>8&255,B.bN.B()&255),B.G],t.t_),q=t.E
-return A.lI(s,A.lG(A.d([B.y5,B.dC,B.N_,B.N2,B.vt,A.ajp(A.d([A.ae1(s,s,B.AA,s,s,new A.Vp(this),s,s,s),B.Iy,A.ae1(s,s,B.AC,s,s,new A.Vq(this),s,s,s)],q),B.aD,B.hZ,B.i_,0)],q),B.aD,B.hZ),B.y,s,s,new A.dZ(s,s,s,s,s,new A.pa(B.a6,0.8,B.iR,s,0,r,s,s),B.aN),s,600,s,s,s,s,1/0)},
+return A.lI(s,A.lG(A.d([B.y5,B.dC,B.MZ,B.N2,B.vt,A.ajp(A.d([A.ae1(s,s,B.AA,s,s,new A.Vp(this),s,s,s),B.Iy,A.ae1(s,s,B.AC,s,s,new A.Vq(this),s,s,s)],q),B.aD,B.hZ,B.i_,0)],q),B.aD,B.hZ),B.y,s,s,new A.dZ(s,s,s,s,s,new A.pa(B.a6,0.8,B.iR,s,0,r,s,s),B.aN),s,600,s,s,s,s,1/0)},
 Ei(a,b,c,d,e,f){var s=null,r=A.o1(15),q=new A.bC(A.aG(B.c.ak(76.5),b.B()>>>16&255,b.B()>>>8&255,b.B()&255),1,B.F,-1)
-return A.lI(s,A.lG(A.d([A.ahS(d,b,s,40),B.vs,A.wJ(f,B.Lh,s),B.vr,A.wJ(c,B.LZ,s),B.dC,new A.tx(!1,e,s,s,s,A.ahA(s,s,A.aG(B.c.ak(25.5),b.B()>>>16&255,b.B()>>>8&255,b.B()&255),s,s,s,0,s,s,b,s,s,s,s,s,new A.bC(A.aG(B.c.ak(127.5),b.B()>>>16&255,b.B()>>>8&255,b.B()&255),1,B.F,-1),s,s,s,s),s,s,!1,s,!0,s,B.MY,s)],t.E),B.aC,B.ax),B.y,s,s,new A.dZ(B.yM,s,new A.cT(q,q,q,q),r,s,s,B.aN),s,s,s,B.zQ,s,s,350)}}
+return A.lI(s,A.lG(A.d([A.ahS(d,b,s,40),B.vs,A.wJ(f,B.Lh,s),B.vr,A.wJ(c,B.LZ,s),B.dC,new A.tx(!1,e,s,s,s,A.ahA(s,s,A.aG(B.c.ak(25.5),b.B()>>>16&255,b.B()>>>8&255,b.B()&255),s,s,s,0,s,s,b,s,s,s,s,s,new A.bC(A.aG(B.c.ak(127.5),b.B()>>>16&255,b.B()>>>8&255,b.B()&255),1,B.F,-1),s,s,s,s),s,s,!1,s,!0,s,B.MX,s)],t.E),B.aC,B.ax),B.y,s,s,new A.dZ(B.yM,s,new A.cT(q,q,q,q),r,s,s,B.aN),s,s,s,B.zQ,s,s,350)}}
 A.Vr.prototype={
 $0(){return A.aiL(this.a,"/shadow-gpt",t.X)},
 $S:0}
@@ -72044,20 +72044,20 @@ B.LJ=new A.n(!0,B.C,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.M0=new A.n(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackRedwoodCity labelMedium",null,null,null,null)
 B.JA=new A.n(!0,B.l,null,".AppleSystemUIFont",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackRedwoodCity labelSmall",null,null,null,null)
 B.MU=new A.di(B.L4,B.Kb,B.L5,B.Lt,B.JU,B.K0,B.Ks,B.Lp,B.KD,B.LM,B.Jt,B.JK,B.LJ,B.M0,B.JA)
+B.Ku=new A.n(!0,B.k9,null,null,null,null,12,null,null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.MV=new A.dP("SCREENSHOTS",null,B.Ku,null,null)
+B.Jm=new A.n(!0,B.w,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.MW=new A.dP("Privacy Policy",null,B.Jm,null,null)
+B.MX=new A.dP("Saber m\xe1s",null,null,null,null)
+B.Kj=new A.n(!0,B.fY,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.iO,null,null,null,null,null,null,null,null)
+B.MY=new A.dP("Privacy Policy",null,B.Kj,null,null)
+B.M1=new A.n(!0,null,null,null,null,null,60,B.ei,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.MZ=new A.dP("DOKYA",null,B.M1,null,null)
+B.JF=new A.n(!0,B.fY,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.N_=new A.dP("\xa9 2026 Dokya - Built with Flutter Web",null,B.JF,null,null)
 B.Aa=new A.Dn(1,"italic")
 B.K4=new A.n(!0,B.eC,null,null,null,null,null,null,B.Aa,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.MV=new A.dP("Last Updated: February 18, 2026",null,B.K4,null,null)
-B.Ku=new A.n(!0,B.k9,null,null,null,null,12,null,null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.MW=new A.dP("SCREENSHOTS",null,B.Ku,null,null)
-B.Jm=new A.n(!0,B.w,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.MX=new A.dP("Privacy Policy",null,B.Jm,null,null)
-B.MY=new A.dP("Saber m\xe1s",null,null,null,null)
-B.Kj=new A.n(!0,B.fY,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.iO,null,null,null,null,null,null,null,null)
-B.MZ=new A.dP("Privacy Policy",null,B.Kj,null,null)
-B.M1=new A.n(!0,null,null,null,null,null,60,B.ei,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.N_=new A.dP("DOKYA",null,B.M1,null,null)
-B.JF=new A.n(!0,B.fY,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.N0=new A.dP("\xa9 2026 Dokya - Built with Flutter Web",null,B.JF,null,null)
+B.N0=new A.dP("Last Updated: February 20, 2026",null,B.K4,null,null)
 B.KU=new A.n(!0,B.i,null,null,null,null,36,B.cb,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.N1=new A.dP("Privacy Policy",null,B.KU,null,null)
 B.K5=new A.n(!0,B.eC,null,null,null,null,18,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
