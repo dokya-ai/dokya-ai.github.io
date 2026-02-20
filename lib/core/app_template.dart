@@ -1,3 +1,5 @@
+import 'dart:ui';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'dart:html' as html;
 
@@ -46,43 +48,48 @@ class AppDetailsPage extends StatelessWidget {
             // --- CARRUSEL DE IMÁGENES JPG ---
             const Text("SCREENSHOTS", style: TextStyle(letterSpacing: 4, color: Colors.white38, fontSize: 12)),
             const SizedBox(height: 20),
-
-            SizedBox(
-              height: 500, // Altura del carrusel
-              child: PageView.builder(
-                controller: _pageController,
-                itemCount: screenshots.length,
-                itemBuilder: (context, index) {
-                  return AnimatedBuilder(
-                    animation: _pageController,
-                    builder: (context, child) {
-                      return Container(
-                        margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          boxShadow: [
-                            BoxShadow(
-                              color: themeColor.withOpacity(0.1),
-                              blurRadius: 20,
-                              spreadRadius: 5,
-                            )
-                          ],
-                        ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(20),
-                          child: Image.asset(
-                            screenshots[index],
-                            fit: BoxFit.contain,
-                            errorBuilder: (context, error, stackTrace) => Container(
-                              color: Colors.white10,
-                              child: const Icon(Icons.image_not_supported, color: Colors.white24, size: 50),
-                            ),
+            ScrollConfiguration(
+              behavior: ScrollConfiguration.of(context).copyWith(
+                dragDevices: {
+                  PointerDeviceKind.touch,
+                  PointerDeviceKind.mouse, // Esto permite usar el mouse para deslizar
+                },
+              ),
+              child: SizedBox(
+                height: 500,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  physics: const BouncingScrollPhysics(),
+                  itemCount: screenshots.length,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 280,
+                      margin: const EdgeInsets.only(right: 20, top: 10, bottom: 30),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        boxShadow: [
+                          BoxShadow(
+                            color: themeColor.withOpacity(0.2),
+                            blurRadius: 15,
+                            offset: const Offset(0, 10),
+                          )
+                        ],
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20),
+                        child: Image.asset(
+                          screenshots[index],
+                          fit: BoxFit.cover,
+                          errorBuilder: (context, error, stackTrace) => Container(
+                            color: Colors.white10,
+                            child: const Icon(Icons.image_not_supported, color: Colors.white24),
                           ),
                         ),
-                      );
-                    },
-                  );
-                },
+                      ),
+                    );
+                  },
+                ),
               ),
             ),
 

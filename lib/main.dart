@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:html' as html; // Para abrir enlaces web
 // IMPORTANTE: Asegúrate de que las rutas de importación coincidan con tus archivos
+import 'apps/shadow_gpt/privacy_policy.dart';
 import 'apps/shadow_gpt/shadow_gpt_page.dart';
 
 void main() => runApp(const MyPortfolio());
@@ -18,7 +19,13 @@ class MyPortfolio extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFF0F0F0F),
         fontFamily: 'Roboto',
       ),
-      home: const HomePage(),
+      // Definimos las rutas aquí
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomePage(),
+        '/shadow-gpt': (context) => const ShadowGPTPage(),
+        '/privacy': (context) => const PrivacyPolicyPage(),
+      },
     );
   }
 }
@@ -55,10 +62,7 @@ class HomePage extends StatelessWidget {
                         icon: Icons.nights_stay,
                         color: Colors.deepPurpleAccent,
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => const ShadowGPTPage()),
-                          );
+                          Navigator.pushNamed(context, '/shadow-gpt');
                         },
                       ),
                       // TARJETA RSTUDIO (Otras apps seguirán este patrón)
@@ -106,7 +110,7 @@ class HomePage extends StatelessWidget {
             child: Icon(Icons.person, size: 50, color: Colors.white),
           ),
           const SizedBox(height: 20),
-          const Text("DOKYA AI", style: TextStyle(fontSize: 60, fontWeight: FontWeight.w900)),
+          const Text("DOKYA", style: TextStyle(fontSize: 60, fontWeight: FontWeight.w900)),
           const Text("Developing the future of AI interfaces",
               style: TextStyle(fontSize: 18, color: Colors.grey)),
           const SizedBox(height: 30),
@@ -168,7 +172,7 @@ class HomePage extends StatelessWidget {
   Widget _buildFooter() {
     return Container(
       padding: const EdgeInsets.all(40),
-      child: const Text("© 2026 Dokya AI - Built with Flutter Web",
+      child: const Text("© 2026 Dokya - Built with Flutter Web",
           style: TextStyle(color: Colors.white24)),
     );
   }

@@ -19,10 +19,7 @@ class ShadowGPTPage extends StatelessWidget {
         "assets/apps/shadow_gpt/screen2.jpg",
       ],
       onPrivacyPolicyTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const PrivacyPolicyPage()),
-        );
+        Navigator.pushNamed(context, '/privacy');
       },
     );
   }
