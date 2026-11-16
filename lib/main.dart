@@ -3,6 +3,7 @@ import 'dart:html' as html;
 // Importamos las páginas de ShadowGPT
 import 'apps/shadow_gpt/privacy_policy.dart';
 import 'apps/shadow_gpt/shadow_gpt_page.dart';
+import 'apps/dopa/privacy_policy.dart';
 
 void main() => runApp(const MyPortfolio());
 
@@ -27,6 +28,9 @@ class MyPortfolio extends StatelessWidget {
         // --- RUTAS DE SHADOW GPT ---
         '/shadow-gpt': (context) => const ShadowGPTPage(),
         '/shadow-gpt/privacy': (context) => const PrivacyPolicyPage(),
+        '/dopa/privacy': (context) => DopaPrivacyPolicyPage(
+              openUrl: (url) => html.window.open(url, '_blank'),
+            ),
 
         // --- RUTAS DE FUTURAS APPS (Ejemplo) ---
         // '/rstudio-connector': (context) => const RStudioPage(),
